@@ -1,0 +1,32 @@
+site:
+  title: Helgoboss Docs
+  url: https://docs.helgoboss.org
+  start_page: realearn::introduction.adoc
+  robots: allow
+
+content:
+  sources: 
+  - url: https://github.com/helgoboss/helgobox.git
+    branches: HEAD
+    start_path: doc/realearn
+
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+  supplemental_files: ./supplemental-ui
+
+output:
+  clean: true
+
+runtime:
+  fetch: true
+  log:
+    level: info
+
+antora:
+  extensions:
+    - '@antora/lunr-extension'
+    - './node_modules/antora-xref-extension/packages/antora-xref-extension/lib/index.js'
+    - '@antora/pdf-extension'
+

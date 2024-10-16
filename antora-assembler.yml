@@ -1,0 +1,9 @@
+root_level: 0
+asciidoc:
+  attributes:
+    reproducible: true
+    toc: ''
+    outlinelevels: 3
+    source-highlighter: rouge
+    pdf-theme: ./pdf-theme.yml
+
