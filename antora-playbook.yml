@@ -5,10 +5,11 @@ site:
   robots: allow
 
 content:
-  sources: 
-  - url: https://github.com/helgoboss/helgobox.git
+  sources:
+  - start_path: doc/realearn
+#    url: ../realearn
+    url: https://github.com/helgoboss/helgobox.git
     branches: HEAD
-    start_path: doc/realearn
 
 ui:
   bundle:
