@@ -16,6 +16,11 @@ content:
     url: https://github.com/helgoboss/helgobox.git
     branches: HEAD
 
+  - start_path: doc/playtime
+#    url: ../realearn
+    url: https://github.com/helgoboss/helgobox.git
+    branches: HEAD
+
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
