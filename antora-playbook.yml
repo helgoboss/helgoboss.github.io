@@ -1,11 +1,16 @@
 site:
   title: Helgoboss Docs
   url: https://docs.helgoboss.org
-  start_page: realearn::introduction.adoc
+  start_page: helgobox::introduction.adoc
   robots: allow
 
 content:
   sources:
+  - start_path: doc/helgobox
+#    url: ../realearn
+    url: https://github.com/helgoboss/helgobox.git
+    branches: HEAD
+
   - start_path: doc/realearn
 #    url: ../realearn
     url: https://github.com/helgoboss/helgobox.git
