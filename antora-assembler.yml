@@ -4,7 +4,9 @@ asciidoc:
     reproducible: true
     toc: ''
     outlinelevels: 3
+    allow-uri-read: ''
+    kroki-fetch-diagram: ~
     source-highlighter: rouge
     pdf-theme: ./pdf-theme.yml
 build:
-  command: bundle exec asciidoctor-pdf -r asciidoctor-diagram
+  command: bundle exec asciidoctor-pdf -r asciidoctor-kroki
