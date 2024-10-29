@@ -52,6 +52,6 @@ asciidoc:
     experimental: true
     # For showing prev/next links
     page-pagination: ''
-     For letting asciidoctor-diagram generate Mermaid diagrams always as SVG, even for PDFs
-#    mermaid-format: svg
-#    mermaid-config: mermaid.json
+    # For letting asciidoctor-diagram generate Mermaid diagrams always as SVG, even for PDFs
+    mermaid-format: svg
+    mermaid-config: mermaid.json
