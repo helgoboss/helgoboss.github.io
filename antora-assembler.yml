@@ -6,4 +6,5 @@ asciidoc:
     outlinelevels: 3
     source-highlighter: rouge
     pdf-theme: ./pdf-theme.yml
-
+build:
+  command: bundle exec asciidoctor-pdf -r asciidoctor-diagram
