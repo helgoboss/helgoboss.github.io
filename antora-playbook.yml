@@ -7,18 +7,18 @@ site:
 content:
   sources:
   - start_path: doc/helgobox
-#    url: ../realearn
-    url: https://github.com/helgoboss/helgobox.git
+    url: ../realearn
+#    url: https://github.com/helgoboss/helgobox.git
     branches: HEAD
 
   - start_path: doc/realearn
-#    url: ../realearn
-    url: https://github.com/helgoboss/helgobox.git
+    url: ../realearn
+#    url: https://github.com/helgoboss/helgobox.git
     branches: HEAD
 
   - start_path: doc/playtime
-#    url: ../realearn
-    url: https://github.com/helgoboss/helgobox.git
+    url: ../realearn
+#    url: https://github.com/helgoboss/helgobox.git
     branches: HEAD
 
 ui:
