@@ -6,5 +6,17 @@ asciidoc:
     outlinelevels: 3
     source-highlighter: rouge
     pdf-theme: ./pdf-theme.yml
+    # Kroki: Necessary for embedding diagrams via Kroki
+    allow-uri-read: ''
+    # Kroki: Necessary for embedding diagrams via Kroki
+    kroki-fetch-diagram: ~
+    # Asciidoctor Diagram: For letting asciidoctor-diagram generate Mermaid diagrams always as SVG
+    mermaid-format: svg
+    # Asciidoctor Diagram: Custom Mermaid config (most importantly sets `htmlLabels` to false)
+    mermaid-config: mermaid.json
 build:
+  # We currently use asciidoctor-diagram for PDF diagrams because:
+  # 1. With kroki, we need [mermaid,flowchart_html-labels=false] in each diagram
+  # 2. With kroki, we always call and URL (less reliable)
+#  command: bundle exec asciidoctor-pdf -r asciidoctor-kroki
   command: bundle exec asciidoctor-pdf -r asciidoctor-diagram

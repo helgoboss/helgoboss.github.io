@@ -44,8 +44,9 @@ antora:
     - './node_modules/antora-xref-extension/packages/antora-xref-extension/lib/index.js'
     # Generates PDFs (see antora-assembler.yml)
     - '@antora/pdf-extension'
-    # Generates Mermaid diagrams using the antora-mermaid-extension, not Kroki.
-    # Benefits: Completely local & SVG is embedded into HTML, which makes it searchable
+    # Web: Generates Mermaid diagrams using the antora-mermaid-extension, not Kroki.
+    # Benefits: Completely local & SVG inlined into HTML, which makes it searchable
+    # (inlining not possible with Kroki, at least not when kroki-fetch-diagram is true)
     - require: '@sntke/antora-mermaid-extension'
       mermaid_library_url: https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs
       script_stem: header-scripts
@@ -61,8 +62,5 @@ asciidoc:
     experimental: true
     # For showing prev/next links
     page-pagination: ''
-    # For letting asciidoctor-diagram generate Mermaid diagrams always as SVG, even for PDFs
-    mermaid-format: svg
-    mermaid-config: mermaid.json
-    # Generate diagrams at build time (only has an effect when using extension "asciidoctor-kroki")
+    # Kroki: Generate web diagrams at build time
     kroki-fetch-diagram: true
