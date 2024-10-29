@@ -40,4 +40,8 @@ antora:
     - '@antora/lunr-extension'
     - './node_modules/antora-xref-extension/packages/antora-xref-extension/lib/index.js'
     - '@antora/pdf-extension'
-
+    - require: '@sntke/antora-mermaid-extension'
+      mermaid_library_url: https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs
+      script_stem: header-scripts
+      mermaid_initialize_options:
+        start_on_load: true

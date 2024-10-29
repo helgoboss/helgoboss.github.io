@@ -2,6 +2,15 @@
 
 This is the source of the website https://docs.helgoboss.org. It uses the documentation site generator [Antora](https://antora.org/).
 
+## Prepare
+
+```shell
+npm install
+bundle
+```
+
+The `bundle` command installs Ruby gems in the `Gemfile`. This is important for PDF creation (Antora Assembler).
+
 ## Build automatically
 
 The website is built automatically when pushing or starting [this GitHub Actions workflow](https://github.com/helgoboss/helgoboss.github.io/actions/workflows/publish.yml) manually.
