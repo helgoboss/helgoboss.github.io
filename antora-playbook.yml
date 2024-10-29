@@ -45,3 +45,13 @@ antora:
       script_stem: header-scripts
       mermaid_initialize_options:
         start_on_load: true
+
+asciidoc:
+  attributes:
+    # For making menu and button macros work
+    experimental: true
+    # For showing prev/next links
+    page-pagination: ''
+     For letting asciidoctor-diagram generate Mermaid diagrams always as SVG, even for PDFs
+#    mermaid-format: svg
+#    mermaid-config: mermaid.json
