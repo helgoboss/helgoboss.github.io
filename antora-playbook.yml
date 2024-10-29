@@ -37,9 +37,15 @@ runtime:
 
 antora:
   extensions:
+    # Enables search
     - '@antora/lunr-extension'
+    # Substitutes cross-page xrefs to fragments with their titles (weird that this is not a
+    # native Antora/Asciidoc feature)
     - './node_modules/antora-xref-extension/packages/antora-xref-extension/lib/index.js'
+    # Generates PDFs (see antora-assembler.yml)
     - '@antora/pdf-extension'
+    # Generates Mermaid diagrams using the antora-mermaid-extension, not Kroki.
+    # Benefits: Completely local & SVG is embedded into HTML, which makes it searchable
     - require: '@sntke/antora-mermaid-extension'
       mermaid_library_url: https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs
       script_stem: header-scripts
@@ -47,6 +53,9 @@ antora:
         start_on_load: true
 
 asciidoc:
+  extensions:
+    # Uses Kroki to generate diagrams for web.
+    - 'asciidoctor-kroki'
   attributes:
     # For making menu and button macros work
     experimental: true
@@ -55,3 +64,5 @@ asciidoc:
     # For letting asciidoctor-diagram generate Mermaid diagrams always as SVG, even for PDFs
     mermaid-format: svg
     mermaid-config: mermaid.json
+    # Generate diagrams at build time (only has an effect when using extension "asciidoctor-kroki")
+    kroki-fetch-diagram: true

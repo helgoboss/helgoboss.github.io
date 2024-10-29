@@ -7,6 +7,7 @@
     "@antora/lunr-extension": "^1.0.0-alpha.8",
     "@antora/pdf-extension": "^1.0.0-alpha.9",
     "@mermaid-js/mermaid-cli": "^11.2.1",
-    "antora-xref-extension": "github:helgoboss/antora-xref-extension#fix-node-getcontext-not-a-function"
+    "antora-xref-extension": "github:helgoboss/antora-xref-extension#fix-node-getcontext-not-a-function",
+    "asciidoctor-kroki": "^0.18.1"
   }
 }
