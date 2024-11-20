@@ -32,6 +32,9 @@ jobs:
         with:
           ruby-version: '3.3'
           bundler-cache: true
+      - name: Install local extension "global-id-index"
+        working-directory: ./antora-extensions/global-id-index
+        run: npm install
       - name: Install everything
         run: npm install
       - name: Generate Site
