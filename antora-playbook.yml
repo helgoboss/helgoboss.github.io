@@ -7,18 +7,18 @@ site:
 content:
   sources:
   - start_path: doc/helgobox
-#    url: ../realearn
-    url: https://github.com/helgoboss/helgobox.git
+    url: ../realearn
+#    url: https://github.com/helgoboss/helgobox.git
     branches: HEAD
 
   - start_path: doc/realearn
-#    url: ../realearn
-    url: https://github.com/helgoboss/helgobox.git
+    url: ../realearn
+#    url: https://github.com/helgoboss/helgobox.git
     branches: HEAD
 
   - start_path: doc/playtime
-#    url: ../realearn
-    url: https://github.com/helgoboss/helgobox.git
+    url: ../realearn
+#    url: https://github.com/helgoboss/helgobox.git
     branches: HEAD
 
 ui:
@@ -39,6 +39,8 @@ antora:
   extensions:
     # Enables search
     - '@antora/lunr-extension'
+    # Enables a global ID index
+    - ./antora-extensions/global-id-index
     # Substitutes cross-page xrefs to fragments with their titles (weird that this is not a
     # native Antora/Asciidoc feature)
     - './node_modules/antora-xref-extension/packages/antora-xref-extension/lib/index.js'
