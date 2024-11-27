@@ -3,6 +3,7 @@ asciidoc:
   attributes:
     reproducible: true
     toc: ''
+    toclevels: 3
     outlinelevels: 3
     source-highlighter: rouge
     pdf-theme: ./pdf-theme.yml
