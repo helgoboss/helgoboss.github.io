@@ -1,3 +1,5 @@
-extends: default-sans
+# The "-with-font-fallbacks" is important because we use some icon-like Unicode characters
+# that are not part of the normal font.
+extends: default-sans-with-font-fallbacks
 image:
   align: center
