@@ -19,7 +19,7 @@ The website is built automatically when pushing or starting [this GitHub Actions
 
 The final build command after installing all required dependencies is:
 
-```
+```shell
 npx antora --fetch antora-playbook.yml
 ```
 
