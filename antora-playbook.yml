@@ -7,18 +7,18 @@ site:
 content:
   sources:
   - start_path: doc/helgobox
-#    url: ../realearn
-    url: https://github.com/helgoboss/helgobox.git
+    url: ../realearn
+#    url: https://github.com/helgoboss/helgobox.git
     branches: HEAD
 
   - start_path: doc/realearn
-#    url: ../realearn
-    url: https://github.com/helgoboss/helgobox.git
+    url: ../realearn
+#    url: https://github.com/helgoboss/helgobox.git
     branches: HEAD
 
   - start_path: doc/playtime
-#    url: ../realearn
-    url: https://github.com/helgoboss/helgobox.git
+    url: ../realearn
+#    url: https://github.com/helgoboss/helgobox.git
     branches: HEAD
 
 ui:
@@ -44,6 +44,8 @@ antora:
     # Substitutes cross-page xrefs to fragments with their titles (weird that this is not a
     # native Antora/Asciidoc feature)
     - './node_modules/antora-xref-extension/packages/antora-xref-extension/lib/index.js'
+    # DEV: Work with local antora-xref-extension instead
+#    - '../antora-xref-extension/packages/antora-xref-extension/lib/index.js'
     # Generates PDFs (see antora-assembler.yml)
     - '@antora/pdf-extension'
     # Web: Generates Mermaid diagrams using the antora-mermaid-extension, not Kroki.
