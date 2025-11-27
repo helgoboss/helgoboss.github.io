@@ -24,3 +24,16 @@ npx antora --fetch antora-playbook.yml
 ```
 
 Consider temporarily switching the content URL to a local path in [antora-playbook.yml]().
+
+## Develop
+
+The UI is an extended [Antora Default UI](https://gitlab.com/antora/antora-ui-default/-/tree/master). The extension files can be found in
+the `supplemental-ui` folder.
+
+To help with debugging, there's a Handlebars `inspect` helper which you can use like this to add the contents of a JavaScript object to the output:
+
+```hbs
+<pre>
+    {{ inspect page }}
+</pre>
+```

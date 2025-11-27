@@ -1,0 +1,26 @@
+<article class="doc">
+  {{#if page.componentVersion.prerelease}}
+    <div class="admonitionblock caution">
+      <table>
+        <tbody>
+        <tr>
+          <td class="icon">
+            <i class="fa icon-caution" title="Draft"></i>
+          </td>
+          <td class="content">
+            <div class="paragraph">
+              This documentation is under construction.
+            </div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  {{/if}}
+
+  {{#with page.title}}
+    <h1 class="page">{{{this}}}</h1>
+  {{/with}}
+  {{{page.contents}}}
+  {{> pagination}}
+</article>

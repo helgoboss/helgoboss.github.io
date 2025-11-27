@@ -6,20 +6,30 @@ site:
 
 content:
   sources:
-  - start_path: doc/helgobox
-#    url: ../realearn
+  - # Helgobox
     url: https://github.com/helgoboss/helgobox.git
+    #    url: ../realearn
     branches: HEAD
+    start_path: doc/helgobox
 
-  - start_path: doc/realearn
-#    url: ../realearn
+  - # ReaLearn
     url: https://github.com/helgoboss/helgobox.git
+    #    url: ../realearn
     branches: HEAD
+    start_path: doc/realearn
 
-  - start_path: doc/playtime
-#    url: ../realearn
+  - # Playtime
     url: https://github.com/helgoboss/helgobox.git
+    #    url: ../realearn
     branches: HEAD
+    start_path: doc/playtime
+
+  - # Jam Pad
+#    url: https://github.com/helgoboss/jampad-public.git
+    url: ../jampad-public
+    branches: HEAD
+    start_path: docs/antora
+
 
 ui:
   bundle:
